@@ -1,0 +1,28 @@
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;font-family:"BpmfZihiSans","Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:linear-gradient(#bfe9ff,#e8ffd6);min-height:100vh;color:#333;user-select:none}
+header{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:#ff8fab;color:#fff}
+h1{font-size:clamp(18px,4vw,28px);margin:0}
+#stars{font-size:24px;font-weight:bold}
+main{padding:16px;max-width:900px;margin:auto;text-align:center}
+button{font:inherit;border:none;border-radius:20px;cursor:pointer;box-shadow:0 6px 0 rgba(0,0,0,.18);transition:transform .1s}
+button:active{transform:translateY(4px);box-shadow:0 2px 0 rgba(0,0,0,.18)}
+.small{font-size:24px;padding:6px 12px;background:#fff}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:20px}
+.menu button{font-size:30px;padding:30px 10px;color:#fff}
+.c1{background:#ff9f1c}.c2{background:#2ec4b6}.c3{background:#9b5de5}.c4{background:#f15bb5}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;margin-top:20px}
+.opt{font-size:56px;padding:20px 8px;background:#fff;min-height:110px}
+.opt.zy{font-size:34px;letter-spacing:4px}
+.big{font-size:80px;margin:10px}
+.play{font-size:60px;padding:16px 40px;background:#ffd166}
+.q{font-size:64px;background:#fff;border-radius:24px;padding:12px 24px;display:inline-block;margin:10px}
+.slots{display:flex;justify-content:center;gap:12px;margin:16px}
+.slot{width:110px;height:110px;border:5px dashed #9b5de5;border-radius:20px;background:#fff;font-size:64px;display:flex;align-items:center;justify-content:center}
+.wrong{animation:shake .4s}.right{background:#b8f2b0!important}
+@keyframes shake{25%{transform:translateX(-10px)}75%{transform:translateX(10px)}}
+#fx{position:fixed;inset:0;pointer-events:none;display:flex;align-items:center;justify-content:center;font-size:120px}
+.pop{animation:pop 1s forwards}@keyframes pop{0%{transform:scale(.2);opacity:0}30%{transform:scale(1.2);opacity:1}100%{transform:scale(1) translateY(-120px);opacity:0}}
+canvas{background:#fff;border-radius:24px;touch-action:none;max-width:100%}
+.row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:10px}
+.row button{font-size:40px;padding:10px 22px;background:#fff}
+.row button.sel{background:#ffd166}
